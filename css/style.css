@@ -1,0 +1,692 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #181419;
+}
+
+
+header {
+  background-color: #9f3647;
+  width: 100%;
+  position: fixed; 
+  color: #fff;
+  padding: 10px 25PX;
+  z-index: 10;
+}
+
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.anclaLogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.anclaLogo i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.listaNav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.listaNav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .listaNav  a{
+  padding: 5px 10px;
+
+}
+
+.header .listaNav  a:hover {
+  background-color: #9c293c;
+  box-shadow: 0 0 10px #160b0d;
+  border-radius: 8px;
+  
+}
+
+.iniciarSesion {
+  background-color: black;
+  border-radius: 5px;
+}
+
+.seccion-principal{
+   font-size: 8px;
+  min-height: 18em; 
+  color: #ffffff;
+  background:linear-gradient(to right top, #0000008a, #0000008a ), url(../img/banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px; 
+  
+} 
+
+.seccion-principal .titulo-principal{
+  text-align: center; 
+  margin-top: 4.5em;
+  margin-bottom: 0.5em;
+  font-size: 4.5em;
+  font-weight: bold;
+  
+} 
+
+.seccion-principal .subtitulo-principal{
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+.titulo-principal {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.subtitulo-principal {
+  font-size: 2.7em;
+  margin-bottom: 20px;
+}
+
+.btn-registro {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9c293c;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  border-radius: 0.31em;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+} 
+
+.btn-registro:hover{
+  transform: scale(0.9);
+  box-shadow: 2px 4px 17px 2px rgba(159,54,71,0.75);
+  -webkit-box-shadow: 2px 4px 17px 2px rgba(159,54,71,0.75);
+  -moz-box-shadow: 2px 4px 17px 2px rgba(159,54,71,0.75);
+  
+} 
+
+.buscadorPrincipal {
+  color: #ffffff;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.buscadorPrincipal h2{
+  font-size: 1.7rem;
+
+} 
+
+.tituloSection {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+} 
+
+
+.buscadorPeliculas {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px 0; 
+}
+
+.inputBuscador, .botonBuscador {
+  padding: 10px;
+  margin: 5px;
+} 
+ .inputBuscador{
+  border-radius: 20px;
+} 
+
+
+
+hr {
+  border: 1px solid #9f3647;
+  width: 80%;
+  margin: 0 auto; 
+  
+}
+
+
+
+/* .main {
+  padding: 20px;
+} */
+
+/* Estilos para la sección principal */
+
+
+
+
+/* Estilos para la sección de buscador */
+.buscadorPrincipal {
+  margin-top: 20px;
+}
+
+.tituloSection {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.buscadorPeliculas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputBuscador {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.botonBuscador {
+  padding: 10px 15px;
+  font-size: 1.1em;
+  background-color: #9c293c;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.botonBuscador:hover {
+  transform: scale(0.9);
+  box-shadow: 2px 4px 17px 2px rgba(159,54,71,0.75);
+  -webkit-box-shadow: 2px 4px 17px 2px rgba(159,54,71,0.75);
+  -moz-box-shadow: 2px 4px 17px 2px rgba(159,54,71,0.75);
+}
+
+
+/* Estilos para la sección de tendencias */
+.peliculasTendencia {
+  margin-top: 30px;
+}
+
+.peliculasTendencia h3{
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+
+
+
+.peliculas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.pelicula {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.pelicula:hover {
+  transform: scale(0.90);
+  filter: blur(5px);
+}
+
+
+
+/* .boton {
+  background-color: #9c293c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+} */
+
+/* .boton.anterior, .boton.siguiente {
+  display: block;
+  width: 100%; 
+} */
+
+/* Estilos de los botones de navegación peliculas */
+
+
+ button {
+  border: 1px solid white;
+  background-color: #9f3647;
+  color: #ffffff;
+  padding: .8rem .8rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 500;
+  margin-bottom: 90px;
+  transition: transform 0.3s, box-shadow 0.3s;
+} 
+
+.btn-anterior, .btn-siguiente {
+  width: 90px;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 10px;
+} 
+
+.btn-siguiente:hover {
+  scale: .93;
+  transition: .3s ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.461);
+}
+.btn-anterior:hover {
+  scale: .93;
+  transition: .3s ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.461);
+}
+
+/* Estilos para la sección de aclamadas */
+.tituloSection {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.peliculasAclamadas {
+  margin-top: 20px;
+}
+
+.aclamadas {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.aclamadas div {
+  flex: 0 0 45%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px;
+}
+
+img{
+  width: 110%;
+  margin: 0px;
+  
+}
+
+
+footer {
+  background-color: #9f3647;
+  color: #fff;
+  padding: 30px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   
+  bottom: 0;
+  width: 100%;
+}
+
+.administradorPeliculas {
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.flechaArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  
+}
+.flechaArriba img {
+  width: 30px;
+  height: 30px;
+  
+  
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9f3647;
+}
+
+
+
+
+
+
+/*Explicación
+Mobile First: El diseño inicial está optimizado para dispositivos móviles.
+Películas en tendencia: En pantallas pequeñas, las películas se muestran una por una en una columna. En pantallas más grandes, se ajustan para mostrarse en una grilla de cuatro columnas y cinco filas.
+Películas más aclamadas: En pantallas pequeñas, se muestran dos películas por fila. En pantallas más grandes, se muestran en una fila continua con scroll horizontal.
+Puedes ajustar los tamaños y estilos según tus necesidades específicas.*/
+
+
+
+
+/*Explicación
+Estilos generales: Se establece un estilo base para todos los elementos y se resetean márgenes y rellenos para evitar inconsistencias entre navegadores.
+Header: El logo se centra y se coloca en la parte superior. Los enlaces de navegación están organizados en columnas para dispositivos móviles y se alinean horizontalmente para pantallas más grandes.
+Buscador: El input y el botón del buscador se centran y se alinean horizontalmente.
+Películas:
+Tendencias: Se muestra una imagen por pantalla en dispositivos móviles, permitiendo el desplazamiento horizontal. En tablets se muestran dos imágenes por pantalla y en escritorio se muestran tres.
+Aclamadas: Similar a las tendencias pero ajustado para dos imágenes por pantalla en tablets y tres en escritorio.
+Footer: Está diseñado para ser fijo en la parte inferior de la pantalla, con una flecha a la derecha para volver arriba.
+Con este código CSS se garantiza que el diseño sea responsive y optimizado para dispositivos móviles primero, mejorando la experiencia del usuario*/
+
+
+
+/* SECCION REGISTRO */
+/* .bodyRegistrarse{
+   background-image: url(/img/fondo.jpg);
+} */
+
+
+
+/* Estilos base (mobile first) */
+body.bodyRegistrarse {
+    background-image: url(/img/fondo.jpg);
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+}
+
+.headerRegistrarse {
+    /* background-color: #333; */
+    visibility: hidden;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: -1;
+}
+
+.anclaLogo {
+    visibility: visible;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.anclaLogo i {
+    margin-right: 5px;
+}
+
+ #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}  
+
+.seccionRegistrarse {
+    background-color: rgb(42, 42, 42);
+    /* padding: 20px; */
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    
+}
+
+.tituloRegistrarse {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.seccionRegistrarse div {
+    margin-bottom: 5px;
+}
+
+.seccionRegistrarse input,
+.seccionRegistrarse select {
+    width: calc(100% - 20px);
+    padding: 5px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #9f3647;
+    border-radius: 20px;
+    background-color: #333333;
+}
+
+#nombre, #apellido, #email, #password, #fechaNacimiento, #pais,#terminos{
+  width: 75%;
+  color: #ffffff;
+  
+}
+
+.error-text {
+    color: red;
+    font-size: 0.9em;
+    height: 1em;
+    margin-left: 55px;
+}
+
+.terminos {
+    display: flex;
+    align-items: center;
+}
+
+.terminos .item {
+  color: #ffffff;
+  margin-left: 25px;
+}
+
+#terminos{
+  color: #ffffff;
+  margin-left: 25px;
+} 
+
+#botonRegistrarse{
+    background-color: #9f3647;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 75%;
+} 
+
+.ayuda {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* .ayuda:hover {
+    text-decoration: underline;
+} */
+
+#botonInicio{
+  background-color: #9f3647;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 75%;
+}
+
+
+@media (min-width: 600px) {
+  .navegacion {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .listaNav {
+      flex-direction: row;
+      gap: 20px;
+  }
+
+    .btn-anterior{
+    margin-left: 550px;
+
+  } 
+
+  .seccion-principal{
+    font-size: 28px; 
+    height: 25em; 
+      
+  }
+
+  .seccion-principal .titulo-principal{
+    
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+    font-size: 2.2em;
+      
+  }
+  
+  .seccion-principal .subtitulo-principal{
+    
+    font-size: 1.3em;
+      
+  }
+  
+  .btn-registro{
+    font-weight: 700;
+    font-size: .7em;
+  
+  } 
+}
+
+.peliculas div {
+  flex: 0 0 22%;
+  max-width: 100%; 
+  width: 150px; 
+  margin-left: 50px;
+  
+}
+
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 768px) {
+  #tendenciasContainer {
+    width: 100%;
+    height: 1800px;
+    max-width: 1350px; 
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: repeat(4, 1fr);
+    gap: 10px; 
+    padding: 20px;  
+      
+  } 
+  
+  .peliculas {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+  } 
+
+   .peliculas div {
+      flex: 0 0 22%;
+      max-width: 70%;
+      width: 100px;
+      margin-left: 12px;
+      
+  }  
+
+  .pelicula {
+    margin: 1rem;
+  } 
+
+  .boton.anterior, .boton.siguiente {
+      display: inline-block;
+      width: auto; 
+  }
+
+   .aclamadas div {
+      flex: 0 0 60%;
+      max-width: 30%;
+  } 
+}
+
+@media (min-width: 1024px) {
+    .peliculas div {
+      flex: 0 0 19%; 
+      max-width: 60%;
+  }  
+
+  .aclamadas div {
+      flex: 0 0 15%;
+      max-width: 15%;
+  } 
+
+  .imgTendencia {
+    max-width: 100px;
+     
+  } 
+
+  .imgAclamada {
+    max-width: 180px;
+  }
+}
+
+
+/* Media Queries para pantallas más grandes */
+/* @media (min-width: 768px) {
+  .seccionRegistrarse {
+      padding: 30px;
+      max-width: 500px;
+  }
+} */
+
+/* @media (min-width: 1024px) {
+  .seccionRegistrarse {
+      padding: 40px;
+      max-width: 600px;
+  }
+
+  .tituloRegistrarse {
+      font-size: 2em;
+  }
+} */
